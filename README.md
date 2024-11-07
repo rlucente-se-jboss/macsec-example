@@ -1,9 +1,10 @@
 # WIP use at your own risk
 
 ## Setup environment
-This was tested using two KVM virtual machines with the `default` virtual
-network. Each machine was created with a user that has `sudo` privileges
-(e.g. they are in the `wheel` group).
+This was tested using two KVM virtual machines running RHEL 9.4 where
+each machine had a single NIC that was connected to the same virtual
+network as the other. A user with administrative privileges was created
+on each machine (e.g. they are in the `wheel` group).
 
 Make sure that the parameters in the `demo.conf` file match the device
 values on each virtual guest. The parameters `ETHDEV_1`, `MAC_1`,
